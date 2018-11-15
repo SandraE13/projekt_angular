@@ -1,0 +1,17 @@
+.h3{
+  margin-left: 20px;
+}
+
+.container{
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  float: left;
+  width: auto;
+  height: 500px;
+}
+
+.select-wrapper{
+  margin-left: 20px;
+  width: 220px;
+}
