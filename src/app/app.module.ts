@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderUserComponent } from './Header/header-user/header-user.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { MainWindowComponent } from './main-window/main-window.component';
+import { ProjektFormularComponent } from './projekt-formular/projekt-formular.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { MainWindowComponent } from './main-window/main-window.component';
     HeaderComponent,
     HeaderUserComponent,
     SideMenuComponent,
-    MainWindowComponent
+    MainWindowComponent,
+    ProjektFormularComponent
   ],
   imports: [
     BrowserModule,
