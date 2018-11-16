@@ -1,0 +1,9 @@
+.main-wrapper {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    float: right;
+    width: 80%;
+    height: 500px;
+  }
+  
