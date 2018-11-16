@@ -7,6 +7,7 @@ import { HeaderUserComponent } from './Header/header-user/header-user.component'
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { MainWindowComponent } from './main-window/main-window.component';
 import { ProjektFormularComponent } from './projekt-formular/projekt-formular.component';
+import { AppService } from './app.service';
 
 
 @NgModule({
@@ -21,8 +22,9 @@ import { ProjektFormularComponent } from './projekt-formular/projekt-formular.co
   imports: [
     BrowserModule,
     FormsModule
+    
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
