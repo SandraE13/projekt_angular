@@ -1,7 +1,7 @@
-<app-header (featureSeleceted)="onNavigate($event)"></app-header>
+<app-header></app-header>
 <div class="container">
   <div class="row">
-    <app-side-menu></app-side-menu>
+    <app-side-menu (featureSeleceted)="onNavigate($event)"></app-side-menu>
     <app-main-window *ngIf="loadedFeature ==='formular'"></app-main-window>
     <app-projekt-formular *ngIf ="loadedFeature !=='formular'"></app-projekt-formular>
   </div>
