@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {NgForm} from '@angular/forms';
+
 
 @Component({
   selector: 'app-main-window',
@@ -12,4 +14,7 @@ export class MainWindowComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSaveData(form: NgForm) {
+    console.log(form);
+  }
 }

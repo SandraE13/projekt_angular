@@ -13,5 +13,6 @@
 
 .select-wrapper{
   margin-left: 20px;
-  width: 220px;
+  width: auto;
+  float: right;
 }

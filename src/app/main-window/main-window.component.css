@@ -1,4 +1,10 @@
 .main-wrapper {
-
-
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  float: right;
+  width: auto;
+  min-width: 400px;
+  min-height: 500px;
+  height: auto;
 }
