@@ -3,27 +3,66 @@
     <form (ngSubmit)="onSaveData(f)" #f="ngForm">
       <div id="user-input">
         <div class="form-group">
-          <p>Projekt:</p>
-          <select id="Projekt" name="Projekt">
+          <h4>Projekt</h4>
+          <select id="Projekt" name="Projekt" ngModel>
             id="projekt"
             class="form-control"
             ngModel
             name="projekt"
-            <option value="Projekt1">K-23342342</option>
-            <option value="Projekt2">K-98323771</option>
-            <option value="Projekt3">K-62388211</option>
+            <option name="K-23342342" value="K-23342342">K-23342342</option>
+            <option name="K-98323771" value="K-98323771">K-98323771</option>
+            <option name="K-62388211" value="K-62388211">K-62388211</option>
         </select>
 
         </div>
 
-        <p>Datum:</p>
+        <h4>Datum</h4>
           <input type="date"
                    id="date"
                    class="form-control"
                    name="date"
                    ngModel
                    required>
-<br><br>
+<br>
+        <h4>Arbeitszeit</h4>
+        <p>Von:</p>
+        <input type="time" list="times" name="zeit-von" ngModel>
+        <datalist id="times">
+          <option label="Morgens">06:00</option>
+          <option>06:30</option>
+          <option>07:00</option>
+          <option>07:30</option>
+          <option>08:00</option>
+          <option>08:30</option>
+          <option>09:00</option>
+          <option label="Nachmittag">14:00</option>
+          <option>14:30</option>
+          <option>15:00</option>
+          <option>15:30</option>
+          <option>16:00</option>
+          <option>16:30</option>
+          <option>17:00</option>
+        </datalist>
+<p>Bis:</p>
+        <input type="time" list="times" name="zeit-bis" ngModel>
+        <datalist id="times">
+          <option label="Morgens">06:00</option>
+          <option>06:30</option>
+          <option>07:00</option>
+          <option>07:30</option>
+          <option>08:00</option>
+          <option>08:30</option>
+          <option>09:00</option>
+          <option label="Nachmittag">14:00</option>
+          <option>14:30</option>
+          <option>15:00</option>
+          <option>15:30</option>
+          <option>16:00</option>
+          <option>16:30</option>
+          <option>17:00</option>
+        </datalist>
+<br>
+        <br>
         <p>Kommentar:</p>
           <input type="text"
                 id="Kommentar"

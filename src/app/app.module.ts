@@ -22,7 +22,6 @@ import { AppService } from './app.service';
   imports: [
     BrowserModule,
     FormsModule
-    
   ],
   providers: [AppService],
   bootstrap: [AppComponent]
